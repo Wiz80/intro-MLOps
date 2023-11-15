@@ -1,1 +1,8 @@
 venv/
+
+
+*.json
+*.csv
+*.pkl
+
+.ipynb_checkpoints/
