@@ -6,7 +6,6 @@ venv/
 *.pkl
 
 *.png
-*.txt
 
 __pycache__/
 
