@@ -17,9 +17,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Pull Data with DVC
-        run: |
-          dvc pull model/model.pkl.dvc -r model-track
       - name: Training Model
         env: 
           SERVICE_ACCOUNT_KEY: ${{secrets.SERVICE_ACCOUNT_KEY}}
@@ -29,7 +26,6 @@ jobs:
           source venv/bin/activate
           pip install -r requirements.txt
           export GOOGLE_APPLICATION_CREDENTIALS=$(python utilities/setter.py)
-          dvc add model/model.pkl -f
           dvc pull model/model.pkl.dvc -r model-track
           dvc unprotect model/model.pkl
           dvc repro -f
