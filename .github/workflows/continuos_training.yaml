@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+      - name: Pull Data with DVC
+        run: |
+          dvc pull model/model.pkl.dvc -r model-track
       - name: Training Model
         env: 
           SERVICE_ACCOUNT_KEY: ${{secrets.SERVICE_ACCOUNT_KEY}}
