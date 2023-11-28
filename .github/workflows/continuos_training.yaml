@@ -35,7 +35,7 @@ jobs:
       - name: Commit .dvc file changes
         run: |
           git config --global user.email "harrihoyos2680@gmail.com"
-          git config --global user.username "bot"
+          git config --global user.username "Wiz80"
           git add model/model.pkl.dvc
           git commit -m "updating model"
       - uses: ad-m/github-push-action@master
