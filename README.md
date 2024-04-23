@@ -199,7 +199,7 @@ The intro-MLOps project provides a robust Machine Learning Operations solution. 
 
 **System Requirements:**
 
-* **Python**: `version x.y.z`
+* **Python**: `version 3.9.17`
 
 ###  Installation
 
@@ -236,15 +236,7 @@ The intro-MLOps project provides a robust Machine Learning Operations solution. 
 > ```console
 > $ pytest
 > ```
-
----
-
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
-
+> 
 ---
 
 ##  Contributing
@@ -291,16 +283,6 @@ Contributions are welcome! Here are several ways you can contribute:
 </details>
 
 ---
-
-##  License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
 
 [**Return**](#-overview)
 
